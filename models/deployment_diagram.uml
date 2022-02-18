@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_uko5IJDwEeyyReaGHNksPA" name="deployment_diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_uk1tcJDwEeyyReaGHNksPA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Node" xmi:id="_0M8lcJDwEeyyReaGHNksPA" name="Server"/>
+  <packagedElement xmi:type="uml:Node" xmi:id="_7bWF0JDwEeyyReaGHNksPA" name="Client1"/>
+  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_KVyr4JDxEeyyReaGHNksPA" name="&lt;&lt;ethernet>>" memberEnd="_KV1vMJDxEeyyReaGHNksPA _KV2WQJDxEeyyReaGHNksPA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KV0hEJDxEeyyReaGHNksPA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KV1IIJDxEeyyReaGHNksPA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KV1vMJDxEeyyReaGHNksPA" name="client1" type="_7bWF0JDwEeyyReaGHNksPA" association="_KVyr4JDxEeyyReaGHNksPA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KV2WQJDxEeyyReaGHNksPA" name="server" type="_0M8lcJDwEeyyReaGHNksPA" association="_KVyr4JDxEeyyReaGHNksPA"/>
+  </packagedElement>
+</uml:Model>
