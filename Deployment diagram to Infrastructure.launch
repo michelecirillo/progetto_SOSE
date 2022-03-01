@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.m2m.qvt.oml.QvtTransformation">
+    <mapAttribute key="org.eclipse.m2m.qvt.oml.interpreter.configurationProperties"/>
+    <intAttribute key="org.eclipse.m2m.qvt.oml.interpreter.elemCount" value="2"/>
+    <stringAttribute key="org.eclipse.m2m.qvt.oml.interpreter.module" value="/progetto_SOSE/transforms/deployment2occi.qvto"/>
+    <stringAttribute key="org.eclipse.m2m.qvt.oml.interpreter.targetModel1" value="platform:/resource/progetto_SOSE/models/deployment_diagram.uml#/"/>
+    <stringAttribute key="org.eclipse.m2m.qvt.oml.interpreter.targetModel2" value="platform:/resource/progetto_SOSE/models/configuration.Infrastructure"/>
+</launchConfiguration>

@@ -8,13 +8,17 @@
  * in conjunction with mappings defined in the project properties.
  */
 modeltype UML uses 'http://www.eclipse.org/uml2/2.1.0/UML';
-modeltype OCCI uses 'http://schemas.ogf.org/occi/infrastructure/ecore';
-//modeltype OCCI uses 'platform:/resource/progetto_SOSE/model/Infrastructure';
-//modeltype OCCI uses 'http://localhost:8000/Infrastructure.ecore';
-// Aggiungere il modeltype OCCI
+modeltype Infrastructure uses 'http://schemas.ogf.org/occi/infrastructure/ecore';
+modeltype OCCI uses 'http://schemas.ogf.org/occi/core/ecore';
+//modeltype OCCI uses 'platform:/resource/progetto_SOSE/model/Infrastructure.ecore';
 
-transformation deployment2occi();
+transformation deployment2occi(in uml : UML, out Infrastructure);
 
 main() {
+	uml.rootObjects()[UML::Model]->map model2InfrastructureModel();
+}
 
+mapping UML::Model::model2InfrastructureModel() : OCCI::Configuration {
+	description := self.name;
+	//resources := self.map 
 }
