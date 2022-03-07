@@ -16,5 +16,8 @@
     <kind href="http://schemas.ogf.org/occi/infrastructure#//@kinds[term='network']"/>
     <attributes name="occi.core.id" value="7dab117b-a4cc-4738-807b-b5b5f4457ac6"/>
     <attributes name="occi.core.title" value="network3"/>
+    <links xsi:type="infrastructure:Networkinterface" target="//@resources.1"/>
   </resources>
+  <resources xsi:type="infrastructure:Storage" title="storage4"/>
+  <resources xsi:type="infrastructure:Compute" title="compute5"/>
 </occi:Configuration>

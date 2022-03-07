@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" xsi:schemaLocation="http://schemas.ogf.org/occi/core/ecore ../../org.occiware.clouddesigner.occi/model/OCCI.ecore" description="deployment_diagram"/>
+<occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:infrastructure="http://schemas.ogf.org/occi/infrastructure/ecore" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" xsi:schemaLocation="http://schemas.ogf.org/occi/infrastructure/ecore ../../org.occiware.clouddesigner.occi.infrastructure/model/Infrastructure.ecore http://schemas.ogf.org/occi/core/ecore ../../org.occiware.clouddesigner.occi/model/OCCI.ecore" description="deployment_diagram">
+  <resources xsi:type="infrastructure:Compute" title="Server"/>
+  <resources xsi:type="infrastructure:Compute" title="Client"/>
+  <resources xsi:type="infrastructure:Network" title="network1"/>
+</occi:Configuration>

@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_uko5IJDwEeyyReaGHNksPA" name="deployment_diagram">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_uk1tcJDwEeyyReaGHNksPA">
-    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
-  </packageImport>
-  <packagedElement xmi:type="uml:Node" xmi:id="_0M8lcJDwEeyyReaGHNksPA" name="Server"/>
-  <packagedElement xmi:type="uml:Node" xmi:id="_7bWF0JDwEeyyReaGHNksPA" name="Client1"/>
-  <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_KVyr4JDxEeyyReaGHNksPA" name="&lt;&lt;ethernet>>" memberEnd="_KV1vMJDxEeyyReaGHNksPA _KV2WQJDxEeyyReaGHNksPA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KV0hEJDxEeyyReaGHNksPA" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KV1IIJDxEeyyReaGHNksPA" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_KV1vMJDxEeyyReaGHNksPA" name="client1" type="_7bWF0JDwEeyyReaGHNksPA" association="_KVyr4JDxEeyyReaGHNksPA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_KV2WQJDxEeyyReaGHNksPA" name="server" type="_0M8lcJDwEeyyReaGHNksPA" association="_KVyr4JDxEeyyReaGHNksPA"/>
-  </packagedElement>
-</uml:Model>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:infrastructure="http:///schemas/infrastructure/_P-Lw1po-Eey0Z7An-cbSZg/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/infrastructure/_P-Lw1po-Eey0Z7An-cbSZg/4 infrastructure.profile.uml#_P-Lw15o-Eey0Z7An-cbSZg">
+  <uml:Model xmi:id="_uko5IJDwEeyyReaGHNksPA" name="deployment_diagram">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_uk1tcJDwEeyyReaGHNksPA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Node" xmi:id="_0M8lcJDwEeyyReaGHNksPA" name="Server">
+      <nestedClassifier xmi:type="uml:Node" xmi:id="_q9PR4Jo2Eey0Z7An-cbSZg" name="hard_disk1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_7bWF0JDwEeyyReaGHNksPA" name="Client"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_KVyr4JDxEeyyReaGHNksPA" name="&lt;&lt;ethernet>>" memberEnd="_KV1vMJDxEeyyReaGHNksPA _KV2WQJDxEeyyReaGHNksPA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KV0hEJDxEeyyReaGHNksPA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KV1IIJDxEeyyReaGHNksPA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KV1vMJDxEeyyReaGHNksPA" name="client1" type="_7bWF0JDwEeyyReaGHNksPA" association="_KVyr4JDxEeyyReaGHNksPA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KV2WQJDxEeyyReaGHNksPA" name="server" type="_0M8lcJDwEeyyReaGHNksPA" association="_KVyr4JDxEeyyReaGHNksPA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_tyF_IJo2Eey0Z7An-cbSZg" name="network1"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5Y6G3po1Eey0Z7An-cbSZg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5Y6twJo1Eey0Z7An-cbSZg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="infrastructure.profile.uml#_P-Lw15o-Eey0Z7An-cbSZg"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="infrastructure.profile.uml#_-rTfUJozEey0Z7An-cbSZg"/>
+    </profileApplication>
+  </uml:Model>
+  <infrastructure:compute xmi:id="_7FrKgJo1Eey0Z7An-cbSZg" base_Node="_7bWF0JDwEeyyReaGHNksPA" id="" title="Client"/>
+  <infrastructure:compute xmi:id="_ZKvgoJo2Eey0Z7An-cbSZg" base_Node="_0M8lcJDwEeyyReaGHNksPA"/>
+  <infrastructure:storage xmi:id="_7JMe8Zo9Eey0Z7An-cbSZg" base_Node="_q9PR4Jo2Eey0Z7An-cbSZg" id="null" title="defaultValue" summary="null" state="online" message="defaultValue"/>
+  <infrastructure:network xmi:id="_P-M-8Zo-Eey0Z7An-cbSZg" base_Node="_tyF_IJo2Eey0Z7An-cbSZg" id="defaultValue" title="defaultValue" summary="null" label="null" state="inactive" message="defaultValue"/>
+</xmi:XMI>

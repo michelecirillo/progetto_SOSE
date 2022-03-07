@@ -20,5 +20,30 @@ main() {
 
 mapping UML::Model::model2InfrastructureModel() : OCCI::Configuration {
 	description := self.name;
-	//resources := self.map 
+	//resources := uml.objects()[UML::Node]->map nodes2resources()->asOrderedSet();
+	//resources := self.ownedElement[UML::Node]->map nodes2resources()->asOrderedSet();
+	resources := self.map nodes2resources()->asOrderedSet();
+}
+
+
+mapping UML::Model::nodes2resources() : Sequence(OCCI::Resource){
+	init{
+		result := self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::compute').oclIsUndefined())->map node2compute()
+			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::storage').oclIsUndefined())->map node2storage())
+			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::network').oclIsUndefined())->map node2network())->asSequence();
+	}
+}
+
+mapping UML::Node::node2compute() : Infrastructure::Compute{
+	title := self.name;
+	// TODO aggiungere trasformazione dei nodi nested 
+	//result := self.ownedElement[UML::Node].nestedClassifier[UML::Node]->map node2compute()->asSequence();
+}
+
+mapping UML::Node::node2storage() : Infrastructure::Storage{
+	title := self.name;
+}
+
+mapping UML::Node::node2network() : Infrastructure::Network{
+	title := self.name;
 }
