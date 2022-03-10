@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <occi:Configuration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:infrastructure="http://schemas.ogf.org/occi/infrastructure/ecore" xmlns:occi="http://schemas.ogf.org/occi/core/ecore" xsi:schemaLocation="http://schemas.ogf.org/occi/infrastructure/ecore ../../org.occiware.clouddesigner.occi.infrastructure/model/Infrastructure.ecore http://schemas.ogf.org/occi/core/ecore ../../org.occiware.clouddesigner.occi/model/OCCI.ecore" description="deployment_diagram">
-  <resources xsi:type="infrastructure:Compute" title="Client"/>
-  <resources xsi:type="infrastructure:Storage" id="null" title="raid1" summary="null" message="defaultValue"/>
   <resources xsi:type="infrastructure:Compute" title="Server"/>
-  <resources xsi:type="infrastructure:Storage" title="hard disk2"/>
-  <resources xsi:type="infrastructure:Storage" title="hard disk1"/>
   <resources xsi:type="infrastructure:Network" id="defaultValue" title="network1" summary="defaultValue" label="defaultValue" message="defaultValue">
     <attributes name="occi.core.id" value="defaultValue"/>
     <attributes name="occi.core.title" value="defaultValue"/>
+  </resources>
+  <resources xsi:type="infrastructure:Storage" title="hard disk1">
+    <links xsi:type="infrastructure:Storagelink" target="//@resources.5"/>
+  </resources>
+  <resources xsi:type="infrastructure:Compute" title="Client"/>
+  <resources xsi:type="infrastructure:Storage" title="hard disk2">
+    <links xsi:type="infrastructure:Storagelink" target="//@resources.5"/>
+  </resources>
+  <resources xsi:type="infrastructure:Storage" id="null" title="raid1" size="1.4" message="defaultValue">
+    <links xsi:type="infrastructure:Storagelink" target="//@resources.0"/>
   </resources>
 </occi:Configuration>

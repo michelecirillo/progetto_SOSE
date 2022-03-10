@@ -43,7 +43,7 @@ mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource){
 		} endif;
 		
 		if not self.ownedElement[UML::Node]->isEmpty() then {
-			result := result->union(self.ownedElement[UML::Node].map nodes2resources()->asSequence());
+			result := result->union(self.ownedElement[UML::Node].map nodes2resources()->asSequence());				
 		} endif;
 		
 		
@@ -92,6 +92,12 @@ mapping UML::Node::node2storage() : Infrastructure::Storage{
 	size := self.getValue(stereotype, 'size').oclAsType(Real);
 	state := self.getValue(stereotype, 'state').oclAsType(infrastructure::StorageStatus);
 	message := self.getValue(stereotype, 'message').oclAsType(String);
+	// Se il nodo storage è nested (e quindi ha un owner), aggiungo un link di tipo StorageLink collegato al nodo padre
+	if self.owner.oclIsTypeOf(UML::Node) then {
+		links += object Storagelink{
+			target := self.owner.oclAsType(UML::Node).map nodes2resources()->at(1);
+		}		
+	} endif;
 }
 
 /*
