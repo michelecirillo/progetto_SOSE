@@ -75,6 +75,17 @@ mapping UML::Node::node2compute() : Infrastructure::Compute{
 	memory := self.getValue(stereotype, 'memory').oclAsType(Real);
 	state := self.getValue(stereotype, 'state').oclAsType(infrastructure::ComputeStatus);
 	message := self.getValue(stereotype, 'message').oclAsType(String);
+	var o := uml.objects()[UML::CommunicationPath].relatedElement;
+	var communicationPaths := uml.objects()[UML::CommunicationPath];
+	if communicationPaths.relatedElement->includes(self) then{
+		communicationPaths->forEach(communicationPath){
+			if communicationPath.relatedElement->includes(self) then{
+				links += object Networkinterface{
+					target := communicationPath.relatedElement->excluding(self)->asSequence()->at(1).oclAsType(UML::Node).map nodes2resources()->at(1);
+				}
+			}endif;
+		};
+	} endif;
 }
 
 /*

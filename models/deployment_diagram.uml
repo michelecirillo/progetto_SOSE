@@ -11,7 +11,7 @@
       </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Node" xmi:id="_7bWF0JDwEeyyReaGHNksPA" name="Client"/>
-    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_KVyr4JDxEeyyReaGHNksPA" name="&lt;&lt;ethernet>>" memberEnd="_KV1vMJDxEeyyReaGHNksPA _KV2WQJDxEeyyReaGHNksPA">
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_KVyr4JDxEeyyReaGHNksPA" name="rj45_1" memberEnd="_KV1vMJDxEeyyReaGHNksPA _KV2WQJDxEeyyReaGHNksPA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KV0hEJDxEeyyReaGHNksPA" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KV1IIJDxEeyyReaGHNksPA" key="nature" value="UML_Nature"/>
       </eAnnotations>
