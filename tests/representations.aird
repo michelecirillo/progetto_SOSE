@@ -13,7 +13,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_1X8O8JixEeyPXLZHGLYzlQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_R9pR0Ji3EeyPXLZHGLYzlQ" name="new InfrastructureConfiguration Diagram" repPath="#_R9oqwJi3EeyPXLZHGLYzlQ" changeId="5b2e7e04-41c6-4f1b-92e0-82ddeb70fc6d">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_R9pR0Ji3EeyPXLZHGLYzlQ" name="new InfrastructureConfiguration Diagram" repPath="#_R9oqwJi3EeyPXLZHGLYzlQ" changeId="c6cdeb4f-c629-4327-bdd7-6bb31b3d542a">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']"/>
         <target xmi:type="occi:Configuration" href="My.Infrastructure#/"/>
       </ownedRepresentationDescriptors>
@@ -145,7 +145,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_R9ruGpi3EeyPXLZHGLYzlQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_R9ruFZi3EeyPXLZHGLYzlQ" fontName=".AppleSystemUIFont" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R9ruFpi3EeyPXLZHGLYzlQ" x="328" y="256"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R9ruFpi3EeyPXLZHGLYzlQ" x="428" y="236"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_TeYYAJm4Eey4ffmleJaNXQ" type="2003" element="_TeDA0pm4Eey4ffmleJaNXQ">
           <children xmi:type="notation:Node" xmi:id="_TeiJAJm4Eey4ffmleJaNXQ" type="5007"/>
@@ -178,7 +178,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_TeiJA5m4Eey4ffmleJaNXQ"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_TeYYAZm4Eey4ffmleJaNXQ" fontName=".AppleSystemUIFont" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeYYApm4Eey4ffmleJaNXQ" x="636" y="192"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeYYApm4Eey4ffmleJaNXQ" x="700" y="176"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_YpLWkJo0Eey0Z7An-cbSZg" type="2003" element="_YoJb0Jo0Eey0Z7An-cbSZg">
           <children xmi:type="notation:Node" xmi:id="_YpNy0Jo0Eey0Z7An-cbSZg" type="5007"/>
@@ -211,7 +211,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_YpOZ4po0Eey0Z7An-cbSZg"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_YpLWkZo0Eey0Z7An-cbSZg" fontName=".AppleSystemUIFont" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YpLWkpo0Eey0Z7An-cbSZg" x="856" y="264"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YpLWkpo0Eey0Z7An-cbSZg" x="48" y="332"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_ZGK0kJo0Eey0Z7An-cbSZg" type="2003" element="_ZExGYJo0Eey0Z7An-cbSZg">
           <children xmi:type="notation:Node" xmi:id="_ZGK0k5o0Eey0Z7An-cbSZg" type="5007"/>
@@ -266,45 +266,110 @@
           <styles xmi:type="notation:ShapeStyle" xmi:id="_ZGK0kZo0Eey0Z7An-cbSZg" fontName=".AppleSystemUIFont" fontHeight="10"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZGK0kpo0Eey0Z7An-cbSZg" x="356" y="20"/>
         </children>
+        <children xmi:type="notation:Node" xmi:id="_1v5hIJ_yEey8CpH7u9_MqA" type="2003" element="_1vc1MJ_yEey8CpH7u9_MqA">
+          <children xmi:type="notation:Node" xmi:id="_1v7WUJ_yEey8CpH7u9_MqA" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_1v79YJ_yEey8CpH7u9_MqA" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_1v79Y5_yEey8CpH7u9_MqA" type="3010" element="_1vkxAJ_yEey8CpH7u9_MqA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1v79ZJ_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1v79ZZ_yEey8CpH7u9_MqA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1v8kcJ_yEey8CpH7u9_MqA" type="3010" element="_1vnNQZ_yEey8CpH7u9_MqA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1v8kcZ_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1v8kcp_yEey8CpH7u9_MqA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1v8kc5_yEey8CpH7u9_MqA" type="3010" element="_1vobYp_yEey8CpH7u9_MqA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1v8kdJ_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1v8kdZ_yEey8CpH7u9_MqA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1v8kdp_yEey8CpH7u9_MqA" type="3010" element="_1vppgp_yEey8CpH7u9_MqA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1v8kd5_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1v8keJ_yEey8CpH7u9_MqA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1v8keZ_yEey8CpH7u9_MqA" type="3010" element="_1vq3op_yEey8CpH7u9_MqA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1v8kep_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1v8ke5_yEey8CpH7u9_MqA"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_1v8kfJ_yEey8CpH7u9_MqA" type="3010" element="_1vsFwp_yEey8CpH7u9_MqA">
+              <styles xmi:type="notation:FontStyle" xmi:id="_1v8kfZ_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_1v8kfp_yEey8CpH7u9_MqA"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_1v79YZ_yEey8CpH7u9_MqA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_1v79Yp_yEey8CpH7u9_MqA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_1v5hIZ_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1v5hIp_yEey8CpH7u9_MqA" x="236" y="332"/>
+        </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_R9p44pi3EeyPXLZHGLYzlQ"/>
         <edges xmi:type="notation:Edge" xmi:id="_Tej-MJm4Eey4ffmleJaNXQ" type="4001" element="_TeUGkZm4Eey4ffmleJaNXQ" source="_R9ruFJi3EeyPXLZHGLYzlQ" target="_TeYYAJm4Eey4ffmleJaNXQ">
           <children xmi:type="notation:Node" xmi:id="_TeklQJm4Eey4ffmleJaNXQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeklQZm4Eey4ffmleJaNXQ" x="3" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TeklQZm4Eey4ffmleJaNXQ" x="3" y="-11"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_TelMUJm4Eey4ffmleJaNXQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TelMUZm4Eey4ffmleJaNXQ" x="-3" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TelMUZm4Eey4ffmleJaNXQ" x="-3" y="7"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_TelMUpm4Eey4ffmleJaNXQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TelMU5m4Eey4ffmleJaNXQ" x="-3" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TelMU5m4Eey4ffmleJaNXQ" x="-3" y="7"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_Tej-MZm4Eey4ffmleJaNXQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_Tej-Mpm4Eey4ffmleJaNXQ" fontName=".AppleSystemUIFont" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Tej-M5m4Eey4ffmleJaNXQ" points="[0, 0, -148, 47]$[148, -47, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Tej-M5m4Eey4ffmleJaNXQ" points="[0, 0, -112, 43]$[112, -43, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TemacJm4Eey4ffmleJaNXQ" id="(0.6177606177606177,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TemacZm4Eey4ffmleJaNXQ" id="(0.0,0.14184397163120568)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_Temacpm4Eey4ffmleJaNXQ" type="4001" element="_TeUtopm4Eey4ffmleJaNXQ" source="_TeYYAJm4Eey4ffmleJaNXQ" target="_R9rHCZi3EeyPXLZHGLYzlQ">
           <children xmi:type="notation:Node" xmi:id="_Temadpm4Eey4ffmleJaNXQ" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Temad5m4Eey4ffmleJaNXQ" x="10" y="-3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Temad5m4Eey4ffmleJaNXQ" x="59" y="-3"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_TemaeJm4Eey4ffmleJaNXQ" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TemaeZm4Eey4ffmleJaNXQ" x="-9" y="3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TemaeZm4Eey4ffmleJaNXQ" x="-6" y="-8"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_Temaepm4Eey4ffmleJaNXQ" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Temae5m4Eey4ffmleJaNXQ" x="-9" y="3"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Temae5m4Eey4ffmleJaNXQ" x="-59" y="2"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_Temac5m4Eey4ffmleJaNXQ"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_TemadJm4Eey4ffmleJaNXQ" fontName=".AppleSystemUIFont" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TemadZm4Eey4ffmleJaNXQ" points="[0, 0, 96, 152]$[-96, -152, 0, 0]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TemadZm4Eey4ffmleJaNXQ" points="[0, 0, 160, 136]$[-160, -136, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TemafJm4Eey4ffmleJaNXQ" id="(0.6177606177606177,0.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_TemafZm4Eey4ffmleJaNXQ" id="(0.0,0.14184397163120568)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_1v9LgJ_yEey8CpH7u9_MqA" type="4001" element="_1v12xZ_yEey8CpH7u9_MqA" source="_YpLWkJo0Eey0Z7An-cbSZg" target="_1v5hIJ_yEey8CpH7u9_MqA">
+          <children xmi:type="notation:Node" xmi:id="_1v9ykJ_yEey8CpH7u9_MqA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1v9ykZ_yEey8CpH7u9_MqA" x="4" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1v-ZoJ_yEey8CpH7u9_MqA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1v-ZoZ_yEey8CpH7u9_MqA" x="-7" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1v-Zop_yEey8CpH7u9_MqA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1v-Zo5_yEey8CpH7u9_MqA" x="-9" y="-10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_1v9LgZ_yEey8CpH7u9_MqA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_1v9Lgp_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1v9Lg5_yEey8CpH7u9_MqA" points="[108, 21, -194, -40]$[302, 61, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1v_nwJ_yEey8CpH7u9_MqA" id="(0.0,0.192)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1v_nwZ_yEey8CpH7u9_MqA" id="(1.0,0.6829268292682927)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_1v_nwp_yEey8CpH7u9_MqA" type="4001" element="_1v2d1J_yEey8CpH7u9_MqA" source="_1v5hIJ_yEey8CpH7u9_MqA" target="_ZGK0kJo0Eey0Z7An-cbSZg">
+          <children xmi:type="notation:Node" xmi:id="_1v_nxp_yEey8CpH7u9_MqA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1v_nx5_yEey8CpH7u9_MqA" x="-7" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1wAO0J_yEey8CpH7u9_MqA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1wAO0Z_yEey8CpH7u9_MqA" x="9" y="3"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_1wAO0p_yEey8CpH7u9_MqA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1wAO05_yEey8CpH7u9_MqA" x="8" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_1v_nw5_yEey8CpH7u9_MqA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_1v_nxJ_yEey8CpH7u9_MqA" fontName=".AppleSystemUIFont" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1v_nxZ_yEey8CpH7u9_MqA" points="[29, -24, -211, 172]$[240, -196, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1wAO1J_yEey8CpH7u9_MqA" id="(0.0,0.192)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1wAO1Z_yEey8CpH7u9_MqA" id="(1.0,0.6829268292682927)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_R9rHAJi3EeyPXLZHGLYzlQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_R9rHAZi3EeyPXLZHGLYzlQ"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_BKuXQJm0Eey4ffmleJaNXQ" name="network11: Network">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_BKuXQJm0Eey4ffmleJaNXQ" name="network1: Network">
       <target xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.0"/>
       <semanticElements xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -323,7 +388,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']/@subNodeMappings[name='NetworkId']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BK7yoJm0Eey4ffmleJaNXQ" name="title = network11">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BK7yoJm0Eey4ffmleJaNXQ" name="title = network1">
         <target xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.0"/>
         <semanticElements xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.0"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_BK9n0Zm0Eey4ffmleJaNXQ"/>
@@ -332,7 +397,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']/@subNodeMappings[name='NetworkTitle']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BK9n0pm0Eey4ffmleJaNXQ" name="summary = null">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BK9n0pm0Eey4ffmleJaNXQ" name="summary = ciao">
         <target xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.0"/>
         <semanticElements xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.0"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_BLAEEZm0Eey4ffmleJaNXQ"/>
@@ -458,8 +523,8 @@
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_BK26I5m0Eey4ffmleJaNXQ" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="246,139,139">
-        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']/@conditionnalStyles.1/@style"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_85CjU5_MEey8CpH7u9_MqA" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']/@conditionnalStyles.0/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_BLLDMJm0Eey4ffmleJaNXQ" name="id = 7dab117b-a4cc-4738-807b-b5b5f4457ac6">
@@ -480,7 +545,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']/@subNodeMappings[name='NetworkTitle']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BLLDNpm0Eey4ffmleJaNXQ" name="summary = null">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BLLDNpm0Eey4ffmleJaNXQ" name="summary = ciao">
         <target xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.2"/>
         <semanticElements xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.2"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_BLLqQZm0Eey4ffmleJaNXQ"/>
@@ -507,7 +572,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='NetworkContainer']/@subNodeMappings[name='NetworkLabel']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BLMRUJm0Eey4ffmleJaNXQ" name="state = inactive">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_BLMRUJm0Eey4ffmleJaNXQ" name="state = active">
         <target xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.2"/>
         <semanticElements xmi:type="infrastructure:Network" href="My.Infrastructure#//@resources.2"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_BLMRUpm0Eey4ffmleJaNXQ"/>
@@ -607,10 +672,13 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@edgeMappings[name='NetworkinterfaceTargetEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_YoJb0Jo0Eey0Z7An-cbSZg" name="storage4: Storage">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_YoJb0Jo0Eey0Z7An-cbSZg" name="storage4: Storage" outgoingEdges="_1v12xZ_yEey8CpH7u9_MqA">
       <target xmi:type="infrastructure:Storage" href="My.Infrastructure#//@resources.3"/>
       <semanticElements xmi:type="infrastructure:Storage" href="My.Infrastructure#//@resources.3"/>
-      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_YoO7YJo0Eey0Z7An-cbSZg" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_SaN0tZ_sEey8CpH7u9_MqA" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StorageContainer']/@conditionnalStyles.0/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StorageContainer']"/>
@@ -641,7 +709,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StorageContainer']/@subNodeMappings[name='StorageSummary']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Yo1YUpo0Eey0Z7An-cbSZg" name="size = 0.0">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_Yo1YUpo0Eey0Z7An-cbSZg" name="size = 3.4">
         <target xmi:type="infrastructure:Storage" href="My.Infrastructure#//@resources.3"/>
         <semanticElements xmi:type="infrastructure:Storage" href="My.Infrastructure#//@resources.3"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_Yo3NgJo0Eey0Z7An-cbSZg"/>
@@ -669,7 +737,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StorageContainer']/@subNodeMappings[name='StorageMessage']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ZExGYJo0Eey0Z7An-cbSZg" name="compute5: Compute">
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ZExGYJo0Eey0Z7An-cbSZg" name="compute5: Compute" incomingEdges="_1v2d1J_yEey8CpH7u9_MqA">
       <target xmi:type="infrastructure:Compute" href="My.Infrastructure#//@resources.4"/>
       <semanticElements xmi:type="infrastructure:Compute" href="My.Infrastructure#//@resources.4"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -679,7 +747,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ComputeContainer']/@conditionnalStyles.1/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ComputeContainer']"/>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZFgGNJo0Eey0Z7An-cbSZg" name="id = null">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZFgGNJo0Eey0Z7An-cbSZg" name="id = 1">
         <target xmi:type="infrastructure:Compute" href="My.Infrastructure#//@resources.4"/>
         <semanticElements xmi:type="infrastructure:Compute" href="My.Infrastructure#//@resources.4"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_ZFh7YZo0Eey0Z7An-cbSZg"/>
@@ -715,7 +783,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ComputeContainer']/@subNodeMappings[name='ComputeArchitecture']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZFllwpo0Eey0Z7An-cbSZg" name="cores = 0">
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_ZFllwpo0Eey0Z7An-cbSZg" name="cores = 2">
         <target xmi:type="infrastructure:Compute" href="My.Infrastructure#//@resources.4"/>
         <semanticElements xmi:type="infrastructure:Compute" href="My.Infrastructure#//@resources.4"/>
         <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_ZFna8Jo0Eey0Z7An-cbSZg"/>
@@ -778,6 +846,87 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='ComputeContainer']/@subNodeMappings[name='ComputeMessage']"/>
       </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_1vc1MJ_yEey8CpH7u9_MqA" name=": Storagelink" outgoingEdges="_1v2d1J_yEey8CpH7u9_MqA" incomingEdges="_1v12xZ_yEey8CpH7u9_MqA">
+      <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+      <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_1vhtsJ_yEey8CpH7u9_MqA" labelSize="10" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@conditionnalStyles.0/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_1vkxAJ_yEey8CpH7u9_MqA" name="id = null">
+        <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_1vnNQJ_yEey8CpH7u9_MqA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_1vl_IJ_yEey8CpH7u9_MqA" labelSize="10" labelAlignment="LEFT" hideLabelByDefault="true" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkId']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkId']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_1vnNQZ_yEey8CpH7u9_MqA" name="title = null">
+        <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_1vobYZ_yEey8CpH7u9_MqA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_1vobYJ_yEey8CpH7u9_MqA" labelSize="10" labelAlignment="LEFT" hideLabelByDefault="true" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkTitle']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkTitle']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_1vobYp_yEey8CpH7u9_MqA" name="deviceid = null">
+        <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_1vppgZ_yEey8CpH7u9_MqA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_1vppgJ_yEey8CpH7u9_MqA" labelSize="10" labelAlignment="LEFT" hideLabelByDefault="true" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkDeviceid']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkDeviceid']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_1vppgp_yEey8CpH7u9_MqA" name="mountpoint = null">
+        <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_1vq3oZ_yEey8CpH7u9_MqA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_1vq3oJ_yEey8CpH7u9_MqA" labelSize="10" labelAlignment="LEFT" hideLabelByDefault="true" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkMountpoint']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkMountpoint']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_1vq3op_yEey8CpH7u9_MqA" name="state = active">
+        <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_1vsFwZ_yEey8CpH7u9_MqA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_1vsFwJ_yEey8CpH7u9_MqA" labelSize="10" labelAlignment="LEFT" hideLabelByDefault="true" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkState']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkState']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" uid="_1vsFwp_yEey8CpH7u9_MqA" name="message = null">
+        <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <semanticElements xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+        <graphicalFilters xmi:type="diagram:HideLabelFilter" uid="_1vtT4Z_yEey8CpH7u9_MqA"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_1vtT4J_yEey8CpH7u9_MqA" labelSize="10" labelAlignment="LEFT" hideLabelByDefault="true" color="255,255,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkMessage']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@containerMappings[name='StoragelinkContainer']/@subNodeMappings[name='StoragelinkMessage']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1v12xZ_yEey8CpH7u9_MqA" sourceNode="_YoJb0Jo0Eey0Z7An-cbSZg" targetNode="_1vc1MJ_yEey8CpH7u9_MqA">
+      <target xmi:type="infrastructure:Storage" href="My.Infrastructure#//@resources.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1v2d0J_yEey8CpH7u9_MqA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@edgeMappings[name='StorageLinksEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_1v2d0Z_yEey8CpH7u9_MqA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@edgeMappings[name='StorageLinksEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_1v2d1J_yEey8CpH7u9_MqA" sourceNode="_1vc1MJ_yEey8CpH7u9_MqA" targetNode="_ZExGYJo0Eey0Z7An-cbSZg">
+      <target xmi:type="infrastructure:Storagelink" href="My.Infrastructure#//@resources.3/@links.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_1v2d1Z_yEey8CpH7u9_MqA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@edgeMappings[name='StoragelinkTargetEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_1v2d1p_yEey8CpH7u9_MqA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']/@defaultLayer/@edgeMappings[name='StoragelinkTargetEdge']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']/@ownedRepresentations[name='InfrastructureConfiguration%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_R9oqwZi3EeyPXLZHGLYzlQ"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:infrastructure="http:///schemas/infrastructure/_P-Lw1po-Eey0Z7An-cbSZg/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/infrastructure/_P-Lw1po-Eey0Z7An-cbSZg/4 infrastructure.profile.uml#_P-Lw15o-Eey0Z7An-cbSZg">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:infrastructure="http:///schemas/infrastructure/_XdcTQJ_GEey8CpH7u9_MqA/5" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/infrastructure/_XdcTQJ_GEey8CpH7u9_MqA/5 infrastructure.profile.uml#_XdcTQZ_GEey8CpH7u9_MqA">
   <uml:Model xmi:id="_uko5IJDwEeyyReaGHNksPA" name="deployment_diagram">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_uk1tcJDwEeyyReaGHNksPA">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -21,15 +21,15 @@
     <packagedElement xmi:type="uml:Node" xmi:id="_tyF_IJo2Eey0Z7An-cbSZg" name="network1"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5Y6G3po1Eey0Z7An-cbSZg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5Y6twJo1Eey0Z7An-cbSZg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="infrastructure.profile.uml#_P-Lw15o-Eey0Z7An-cbSZg"/>
+        <references xmi:type="ecore:EPackage" href="infrastructure.profile.uml#_XdcTQZ_GEey8CpH7u9_MqA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="infrastructure.profile.uml#_-rTfUJozEey0Z7An-cbSZg"/>
     </profileApplication>
   </uml:Model>
-  <infrastructure:compute xmi:id="_7FrKgJo1Eey0Z7An-cbSZg" base_Node="_7bWF0JDwEeyyReaGHNksPA" id="" title="Client"/>
-  <infrastructure:compute xmi:id="_ZKvgoJo2Eey0Z7An-cbSZg" base_Node="_0M8lcJDwEeyyReaGHNksPA"/>
-  <infrastructure:storage xmi:id="_7JMe8Zo9Eey0Z7An-cbSZg" base_Node="_q9PR4Jo2Eey0Z7An-cbSZg" id="null" title="defaultValue" summary="null" state="online" message="defaultValue"/>
-  <infrastructure:network xmi:id="_P-M-8Zo-Eey0Z7An-cbSZg" base_Node="_tyF_IJo2Eey0Z7An-cbSZg" id="defaultValue" title="defaultValue" summary="null" label="null" state="inactive" message="defaultValue"/>
-  <infrastructure:storage xmi:id="_rBOZoJ7OEeyvWqqoEae6bQ" base_Node="_h0ZdsJ7OEeyvWqqoEae6bQ" title="hard disk1"/>
-  <infrastructure:storage xmi:id="_xnAa0J7OEeyvWqqoEae6bQ" base_Node="_v1bvgJ7OEeyvWqqoEae6bQ" title="hard disk2"/>
+  <infrastructure:compute xmi:id="_dUuFIJ_FEey8CpH7u9_MqA" base_Node="_7bWF0JDwEeyyReaGHNksPA" id="" title="Client"/>
+  <infrastructure:compute xmi:id="_dUuFIZ_FEey8CpH7u9_MqA" base_Node="_0M8lcJDwEeyyReaGHNksPA"/>
+  <infrastructure:storage xmi:id="_dUuFIp_FEey8CpH7u9_MqA" base_Node="_q9PR4Jo2Eey0Z7An-cbSZg" id="null" title="defaultValue" summary="null" size="1.4" state="online" message="defaultValue"/>
+  <infrastructure:storage xmi:id="_dUuFJJ_FEey8CpH7u9_MqA" base_Node="_h0ZdsJ7OEeyvWqqoEae6bQ" title="hard disk1"/>
+  <infrastructure:storage xmi:id="_dUuFJZ_FEey8CpH7u9_MqA" base_Node="_v1bvgJ7OEeyvWqqoEae6bQ" title="hard disk2"/>
+  <infrastructure:network xmi:id="_7DR_wJ_FEey8CpH7u9_MqA" base_Node="_tyF_IJo2Eey0Z7An-cbSZg" newProperty="defaultValue" id="defaultValue" title="defaultValue" summary="defaultValue" label="defaultValue" state="active" message="defaultValue"/>
 </xmi:XMI>
