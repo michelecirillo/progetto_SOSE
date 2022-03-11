@@ -1,16 +1,18 @@
 /*
- * [Introduzione]
+ * Il Deployment diagram to OCCI configuration è una trasformazione che mappa un sott'insieme di elementi del modello
+ * UML deployment diagram (nodi e communication paths) annotato con profilo OCCI (estensione Infrastructure) in una configurazione
+ * OCCI conforme al metamodello Infrastructure.ecore
  */
 
 /*
- * Two modeltypes are declared. The http NS URIs correspond to those used to register the 
- * Ecore models in the environment. Alternatively, a workspace metamodel may be used 
- * in conjunction with mappings defined in the project properties.
+ * Di seguito vengono specificati i modeltypes utilizzati per la trasformazione, in particolare:
+ * UML è il tipo di modello di input
+ * Infrastructure è il tipo di modello di output
+ * OCCI è il core del metamodello Infrastructure che contiene le rispettive superclassi.
  */
 modeltype UML uses 'http://www.eclipse.org/uml2/2.1.0/UML';
 modeltype Infrastructure uses 'http://schemas.ogf.org/occi/infrastructure/ecore';
 modeltype OCCI uses 'http://schemas.ogf.org/occi/core/ecore';
-//modeltype OCCI uses 'platform:/resource/progetto_SOSE/model/Infrastructure.ecore';
 
 transformation deployment2occi(in uml : UML, out Infrastructure);
 
@@ -18,10 +20,15 @@ main() {
 	uml.rootObjects()[UML::Model]->map model2InfrastructureModel();
 }
 
+/*
+ * Questo mapping crea una configurazione OCCI a partire da un modello UML. 
+ *
+ * Il mapping procede assegnando il nome del modello alla descrizione della configurazione e mappando tutti i nodi del modello
+ * UML in risorse di tipo OCCI  
+ *
+ */
 mapping UML::Model::model2InfrastructureModel() : OCCI::Configuration {
 	description := self.name;
-	//resources := uml.objects()[UML::Node]->map nodes2resources()->asOrderedSet();
-	//resources := self.ownedElement[UML::Node]->map nodes2resources()->asOrderedSet();
 	// Versione con select [funziona]
 	//resources := self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::compute').oclIsUndefined())->map node2compute()
 //			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::storage').oclIsUndefined())->map node2storage())
@@ -31,7 +38,14 @@ mapping UML::Model::model2InfrastructureModel() : OCCI::Configuration {
 	
 }
 
-
+/*
+ * Questo mapping crea una sequenza di risorse OCCI a partire da nodi del modello UML (deployment diagram) 
+ *
+ * Il mapping procede facendo un check dello stereotipo assegnato ad ogni nodo UML al fine di mappare il rispettivo nodo
+ * in una corretta risorsa dell'estensione Infrastructure
+ *
+ * Inoltre vengono mappati i nodi nested in risorse OCCI collegate al rispettivo padre da un Infrastructure link (StorageLink oppure NetworkInterface)  
+ */
 mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource){
 	init{
 		if not self.getAppliedStereotype('infrastructure::compute').oclIsUndefined() then {
@@ -46,12 +60,6 @@ mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource){
 			result := result->union(self.ownedElement[UML::Node].map nodes2resources()->asSequence());				
 		} endif;
 		
-		
-//		result := self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::compute').oclIsUndefined())->map node2compute()
-//			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::storage').oclIsUndefined())->map node2storage())
-//			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::network').oclIsUndefined())->map node2network())->asSequence();
-//			->union(self.ownedElement[UML::Node]->map nestedNode2resources()->asSequence()->flatten());
-//		result := self.ownedElement[UML::Node]->map nestedNode2resources()->asSequence()->flatten();
 	}
 }
 

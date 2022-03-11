@@ -4,6 +4,7 @@
     <semanticResources>My.Infrastructure</semanticResources>
     <semanticResources>http://schemas.ogf.org/occi/core</semanticResources>
     <semanticResources>http://schemas.ogf.org/occi/infrastructure</semanticResources>
+    <semanticResources>configuration.Infrastructure</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="__ken8Ok7EeahhfrRVNQLqw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.occiware.clouddesigner.occi.infrastructure.design/description/Infrastructure.odesign#//@ownedViewpoints[name='InfrastructureConfiguration']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="__l0EsOk7EeahhfrRVNQLqw" name="My" repPath="#__l0Esek7EeahhfrRVNQLqw" changeId="80562a30-4fad-4bff-b325-bdde7debb6bf">
