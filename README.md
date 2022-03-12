@@ -11,17 +11,48 @@
 1. Importa tutti i metamodelli della cartella `/model` facendo tasto destro sulla cartella di root del progetto `->Properties->QVT Settings->Metamodel mappings->Add` 
 1. (Facoltativamente) Installa [Papyrus](https://www.eclipse.org/papyrus/download.html)
 
+---
+
 ## Content
 
 Questo progetto contiene le seguenti directory:
-* `/model`:  
-Contiene tutti i metamodelli non di default da importare al fine di poter eseguire la trasformazione, in particolare il metamodello `Infrastructore.ecore`
-* `/models`:  
-Contiene i modelli di input e output della trasformazione
-* `/tests`:  
-Contiene file di test
-* `/trasformations`:  
-Contiene i file QVT che specificano la trasformazione
+- `/model`:  
+	Contiene tutti i metamodelli non di default da importare al fine di poter eseguire la trasformazione, in particolare il metamodello `Infrastructore.ecore`
+- `/models`:  
+	Contiene i modelli di input e output della trasformazione
+- `/tests`:  
+	Contiene file di test
+- `/trasformations`:  
+	Contiene i file QVT che specificano la trasformazione
+
+### Directory Structure
+
+```
+progetto_SOSE/
+├── build.properties
+├── Deployment diagram to Infrastructure.launch
+├── model/
+│   ├── Infrastructure.ecore
+│   ├── Infrastructure.genmodel
+│   └── Infrastructure.occie
+├── models/
+│   ├── configuration.Infrastructure
+│   ├── deployment_diagram.di
+│   ├── deployment_diagram_it_IT.properties
+│   ├── deployment_diagram.notation
+│   ├── deployment_diagram.uml
+│   ├── infrastructure.profile.uml
+│   └── representations.aird
+├── plugin.xml
+├── README.md
+├── tests/
+│   ├── My.Infrastructure
+│   └── representations.aird
+└── transforms/
+    └── deployment2occi.qvto
+```
+
+---
 
 ## Usage
 
