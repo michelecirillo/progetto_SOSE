@@ -29,7 +29,7 @@ main() {
  */
 mapping UML::Model::model2InfrastructureModel() : OCCI::Configuration {
 	description := self.name;
-	// Versione con select [funziona]
+	// Versione con select
 	//resources := self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::compute').oclIsUndefined())->map node2compute()
 //			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::storage').oclIsUndefined())->map node2storage())
 //			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::network').oclIsUndefined())->map node2network())

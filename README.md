@@ -8,7 +8,20 @@
     1. Unzip del file `ecore-master.zip`
     1. In Eclipse `File->Open Projects From File System...->Directory->[/path/to/ecore-master/]->Finish`
 1. Pull di questa repository: `git clone https://github.com/michelecirillo/progetto_SOSE.git`
+1. Importa tutti i metamodelli della cartella `/model` facendo tasto destro sulla cartella di root del progetto `->Properties->QVT Settings->Metamodel mappings->Add` 
 1. (Facoltativamente) Installa [Papyrus](https://www.eclipse.org/papyrus/download.html)
+
+## Content
+
+Questo progetto contiene le seguenti directory:
+* `/model`:  
+Contiene tutti i metamodelli non di default da importare al fine di poter eseguire la trasformazione, in particolare il metamodello `Infrastructore.ecore`
+* `/models`:  
+Contiene i modelli di input e output della trasformazione
+* `/tests`:  
+Contiene file di test
+* `/trasformations`:  
+Contiene i file QVT che specificano la trasformazione
 
 ## Usage
 
