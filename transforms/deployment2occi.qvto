@@ -1,14 +1,19 @@
-/*
+/** *
+ * @title Deployment Diagram to OCCI Configuration
+ * @author Cirillo Michele, Straziota Alessandro
+ * @year 2021-2022 
+ *
  * Il Deployment diagram to OCCI configuration è una trasformazione che mappa un sott'insieme di elementi del modello
  * UML deployment diagram (nodi e communication paths) annotato con profilo OCCI (estensione Infrastructure) in una configurazione
  * OCCI conforme al metamodello Infrastructure.ecore
  */
 
+
 /*
  * Di seguito vengono specificati i modeltypes utilizzati per la trasformazione, in particolare:
- * UML è il tipo di modello di input
- * Infrastructure è il tipo di modello di output
- * OCCI è il core del metamodello Infrastructure che contiene le rispettive superclassi.
+ * 	- UML è il tipo di modello di input
+ * 	- Infrastructure è il tipo di modello di output
+ * 	- OCCI è il core del metamodello Infrastructure che contiene le rispettive superclassi.
  */
 modeltype UML uses 'http://www.eclipse.org/uml2/2.1.0/UML';
 modeltype Infrastructure uses 'http://schemas.ogf.org/occi/infrastructure/ecore';
@@ -20,34 +25,36 @@ main() {
 	uml.rootObjects()[UML::Model]->map model2InfrastructureModel();
 }
 
-/*
- * Questo mapping crea una configurazione OCCI a partire da un modello UML. 
+/**
+ * Questo mapping associa/genera una configurazione OCCI a partire da deployment diagram UML. 
  *
- * Il mapping procede assegnando il nome del modello alla descrizione della configurazione e mappando tutti i nodi del modello
- * UML in risorse di tipo OCCI  
+ * Data una istanza di deployment diagram UML, il mapping procede assegnando il nome del diagramma alla descrizione della configurazione OCCI.
+ * In seguito tutte le istanze di tipo UML.node del diagramma vengono mappate in istanze di tipo OCCI.core.resource.
  *
+ * @source UML::Model
+ * @target OCCI:Configuration  
  */
 mapping UML::Model::model2InfrastructureModel() : OCCI::Configuration {
 	description := self.name;
-	// Versione con select
+	/* Versione con select */
 	//resources := self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::compute').oclIsUndefined())->map node2compute()
 //			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::storage').oclIsUndefined())->map node2storage())
 //			->union(self.ownedElement[UML::Node]->select(e | not e.getAppliedStereotype('infrastructure::network').oclIsUndefined())->map node2network())
 //			->union(self.ownedElement[UML::Node].ownedElement[UML::Node].map nodes2resources())->asOrderedSet();
 	resources := self.ownedElement[UML::Node].map nodes2resources()->asOrderedSet();
-	
 }
 
-/*
- * Questo mapping crea una sequenza di risorse OCCI a partire da nodi del modello UML (deployment diagram) 
+/**
+ * Questo mapping associa/genera una sequenza di risorse OCCI a partire dai nodi del deployment diagram.
  *
- * Il mapping procede facendo un check dello stereotipo assegnato ad ogni nodo UML al fine di mappare il rispettivo nodo
- * in una corretta risorsa dell'estensione Infrastructure
+ * Il mapping procede facendo un check dello stereotipo assegnato ad ogni nodo UML, al fine di inferire la corretta risorsa dell'estensione Infrastructure, Compute, Network o Storage.
+ * Inoltre vengono mappati i nodi nested in risorse OCCI, collegate al rispettivo padre da un Infrastructure link, StorageLink oppure NetworkInterface a seconda della tipologia di risora.
  *
- * Inoltre vengono mappati i nodi nested in risorse OCCI collegate al rispettivo padre da un Infrastructure link (StorageLink oppure NetworkInterface)  
+ * @source UML::Node
+ * @target Sequence(OCCI::Resource)
  */
-mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource){
-	init{
+mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource) {
+	init {
 		if not self.getAppliedStereotype('infrastructure::compute').oclIsUndefined() then {
 			result := result->union(self.map node2compute()->asSequence());
 		} elif not self.getAppliedStereotype('infrastructure::storage').oclIsUndefined() then {
@@ -59,59 +66,63 @@ mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource){
 		if not self.ownedElement[UML::Node]->isEmpty() then {
 			result := result->union(self.ownedElement[UML::Node].map nodes2resources()->asSequence());				
 		} endif;
-		
 	}
 }
 
-/*
- * Questo mapping crea una risorsa Infrastructure di tipo compute a partire da un nodo UML. 
+/**
+ * Questo mapping crea una risorsa Infrastructure di tipo Compute a partire da un relativo nodo UML. 
  *
- * Il mapping procede assegnando tutti gli attributi dello stereotipo infrastructure::compute agli attributi della risorsa 
- * di tipo infrastructure.
+ * Il mapping procede assegnando tutti gli attributi dello stereotipo infrastructure::compute agli attributi della risorsa.
+ * Come specificato nelle specifiche, vengono inizializzati tutti gli attributi richiesti dalla calsse Infrastructure.compute.
  *
+ * @source UML::Node
+ * @target Infrastructure::Compute
  */
-mapping UML::Node::node2compute() : Infrastructure::Compute{
+mapping UML::Node::node2compute() : Infrastructure::Compute {
 	var stereotype = self.getAppliedStereotype('infrastructure::network');
-	id := self.getValue(stereotype, 'id').oclAsType(String);
-	title := self.name;
-	summary := self.getValue(stereotype, 'summary').oclAsType(String);
+	id 			 := self.getValue(stereotype, 'id').oclAsType(String);
+	title 		 := self.name;
+	summary 	 := self.getValue(stereotype, 'summary').oclAsType(String);
 	architecture := self.getValue(stereotype, 'architecture').oclAsType(infrastructure::Architecture);
-	cores := self.getValue(stereotype, 'cores').oclAsType(Integer);
-	hostname := self.getValue(stereotype, 'hostname').oclAsType(String);
-	share := self.getValue(stereotype, 'share').oclAsType(Integer);
-	speed := self.getValue(stereotype, 'speed').oclAsType(Real);
-	memory := self.getValue(stereotype, 'memory').oclAsType(Real);
-	state := self.getValue(stereotype, 'state').oclAsType(infrastructure::ComputeStatus);
-	message := self.getValue(stereotype, 'message').oclAsType(String);
-	var o := uml.objects()[UML::CommunicationPath].relatedElement;
+	cores 		 := self.getValue(stereotype, 'cores').oclAsType(Integer);
+	hostname 	 := self.getValue(stereotype, 'hostname').oclAsType(String);
+	share 		 := self.getValue(stereotype, 'share').oclAsType(Integer);
+	speed 		 := self.getValue(stereotype, 'speed').oclAsType(Real);
+	memory 		 := self.getValue(stereotype, 'memory').oclAsType(Real);
+	state 		 := self.getValue(stereotype, 'state').oclAsType(infrastructure::ComputeStatus);
+	message 	 := self.getValue(stereotype, 'message').oclAsType(String);
 	var communicationPaths := uml.objects()[UML::CommunicationPath];
-	if communicationPaths.relatedElement->includes(self) then{
+	if communicationPaths.relatedElement->includes(self) then {
 		communicationPaths->forEach(communicationPath){
-			if communicationPath.relatedElement->includes(self) then{
+			if communicationPath.relatedElement->includes(self) then {
 				links += object Networkinterface{
-					target := communicationPath.relatedElement->excluding(self)->asSequence()->at(1).oclAsType(UML::Node).map nodes2resources()->at(1);
+					target := communicationPath.relatedElement->excluding(self)
+						->asSequence()->at(1).oclAsType(UML::Node).map nodes2resources()->at(1);
 				}
-			}endif;
+			} endif;
 		};
 	} endif;
 }
 
-/*
- * Questo mapping crea una risorsa Infrastructure di tipo storage a partire da un nodo UML. 
+/**
+ * Questo mapping crea una risorsa Infrastructure di tipo storage a partire da un relativo nodo UML. 
  *
- * Il mapping procede assegnando tutti gli attributi dello stereotipo infrastructure::storage agli attributi della risorsa 
- * di tipo infrastructure.
+ * Il mapping procede assegnando tutti gli attributi dello stereotipo infrastructure::storage agli attributi della risorsa.
+ * Come specificato nelle specifiche, vengono inizializzati tutti gli attributi richiesti dalla calsse Infrastructure.storage.
  *
+ * @source UML::Node
+ * @target Infrastructure::Storage
  */
-mapping UML::Node::node2storage() : Infrastructure::Storage{
+mapping UML::Node::node2storage() : Infrastructure::Storage {
 	var stereotype = self.getAppliedStereotype('infrastructure::storage');
-	id := self.getValue(stereotype, 'id').oclAsType(String);
-	title := self.name;
-	var o := self.getValue(stereotype, 'summary').oclAsType(String);
-	size := self.getValue(stereotype, 'size').oclAsType(Real);
-	state := self.getValue(stereotype, 'state').oclAsType(infrastructure::StorageStatus);
+	id 		:= self.getValue(stereotype, 'id').oclAsType(String);
+	title 	:= self.name;
+	summary := self.getValue(stereotype, 'summary').oclAsType(String);
+	size 	:= self.getValue(stereotype, 'size').oclAsType(Real);
+	state 	:= self.getValue(stereotype, 'state').oclAsType(infrastructure::StorageStatus);
 	message := self.getValue(stereotype, 'message').oclAsType(String);
-	// Se il nodo storage è nested (e quindi ha un owner), aggiungo un link di tipo StorageLink collegato al nodo padre
+	// Se il nodo storage è nested (e quindi ha un parent),
+	// aggiungo un link di tipo StorageLink referenziando la risorsa padre.
 	if self.owner.oclIsTypeOf(UML::Node) then {
 		links += object Storagelink{
 			target := self.owner.oclAsType(UML::Node).map nodes2resources()->at(1);
@@ -119,22 +130,23 @@ mapping UML::Node::node2storage() : Infrastructure::Storage{
 	} endif;
 }
 
-/*
- * Questo mapping crea una risorsa Infrastructure di tipo network a partire da un nodo UML. 
+/**
+ * Questo mapping crea una risorsa Infrastructure di tipo network a partire da un relativo nodo UML. 
  *
- * Il mapping procede assegnando tutti gli attributi dello stereotipo infrastructure::network agli attributi della risorsa 
- * di tipo infrastructure.
- * In più id e title vengono assegnati anche come attributi (come vuole lo standard).
- *
+ * Il mapping procede assegnando tutti gli attributi dello stereotipo infrastructure::network agli attributi della risorsa.
+ * Come specificato nelle specifiche, vengono inizializzati tutti gli attributi richiesti dalla calsse Infrastructure.network.
+ *	
+ * @source UML::Node
+ * @target Infrastructure::Network
  */
-mapping UML::Node::node2network() : Infrastructure::Network{
+mapping UML::Node::node2network() : Infrastructure::Network {
 	var stereotype = self.getAppliedStereotype('infrastructure::network');
-	id := self.getValue(stereotype, 'id').oclAsType(String);
-	title := self.name;
-	summary := self.getValue(stereotype, 'summary').oclAsType(String);
-	vlan := self.getValue(stereotype, 'vlan').oclAsType(Integer);
-	label := self.getValue(stereotype, 'label').oclAsType(String);
-	state := self.getValue(stereotype, 'state').oclAsType(infrastructure::NetworkStatus);
+	id 		:= self.getValue(stereotype, 'id').oclAsType(String);
+	title 	:= self.name;
+	summary	:= self.getValue(stereotype, 'summary').oclAsType(String);
+	vlan 	:= self.getValue(stereotype, 'vlan').oclAsType(Integer);
+	label 	:= self.getValue(stereotype, 'label').oclAsType(String);
+	state 	:= self.getValue(stereotype, 'state').oclAsType(infrastructure::NetworkStatus);
 	message := self.getValue(stereotype, 'message').oclAsType(String);
 	attributes += object AttributeState{
 		name := 'occi.core.id';
