@@ -79,7 +79,7 @@ mapping UML::Node::nodes2resources() : Sequence(OCCI::Resource) {
  * @target Infrastructure::Compute
  */
 mapping UML::Node::node2compute() : Infrastructure::Compute {
-	var stereotype = self.getAppliedStereotype('infrastructure::network');
+	var stereotype = self.getAppliedStereotype('infrastructure::compute');
 	id 			 := self.getValue(stereotype, 'id').oclAsType(String);
 	title 		 := self.name;
 	summary 	 := self.getValue(stereotype, 'summary').oclAsType(String);
